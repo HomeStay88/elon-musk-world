@@ -22,6 +22,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -263,6 +265,112 @@
                     <div class="milestone-actions">
                         <button class="btn-milestone">📊 JUNE 2026 PEAK</button>
                         <button class="btn-milestone secondary">$869.8B ON AUG. 28</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics & Charts Section -->
+    <section class="analytics-section">
+        <div class="analytics-container">
+            <!-- Net Worth Over Time Chart -->
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3 class="chart-title">Net Worth Over Time</h3>
+                    <p class="chart-subtitle">2012 — AUGUST 2026 (USD BILLIONS · SELECTED ESTIMATES)</p>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="wealthChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Wealth Breakdown & Milestones -->
+            <div class="analytics-row">
+                <!-- Wealth Breakdown -->
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3 class="chart-title">Wealth Breakdown</h3>
+                        <p class="chart-subtitle">PRINCIPAL BUSINESS INTERESTS</p>
+                    </div>
+                    <div class="breakdown-content">
+                        <div class="chart-wrapper-small">
+                            <canvas id="breakdownChart"></canvas>
+                        </div>
+                        <div class="breakdown-legend">
+                            <div class="legend-item">
+                                <span class="legend-dot" style="background: #E31937;"></span>
+                                <span>Tesla</span>
+                                <span class="valuation">VALUATION VARIES</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-dot" style="background: #4A90E2;"></span>
+                                <span>SpaceX</span>
+                                <span class="valuation">VALUATION VARIES</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-dot" style="background: #9D4EDD;"></span>
+                                <span>xAI</span>
+                                <span class="valuation">VALUATION VARIES</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-dot" style="background: #FFFFFF;"></span>
+                                <span>X Platform</span>
+                                <span class="valuation">VALUATION VARIES</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-dot" style="background: #00FF00;"></span>
+                                <span>Neuralink</span>
+                                <span class="valuation">VALUATION VARIES</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-dot" style="background: #FFD700;"></span>
+                                <span>Boring Co.</span>
+                                <span class="valuation">VALUATION VARIES</span>
+                            </div>
+                        </div>
+                        <div class="total-wealth">
+                            <span class="wealth-label">FORBES REAL-TIME ESTIMATE · AUG. 28, 2026</span>
+                            <span class="wealth-value">$869.8B</span>
+                            <span class="wealth-note">Forbes and Bloomberg may publish different totals because private holdings and debt are valued differently.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Milestones Timeline -->
+                <div class="milestones-card">
+                    <div class="chart-header">
+                        <h3 class="chart-title">Key Wealth Milestones</h3>
+                    </div>
+                    <div class="milestones-grid">
+                        <div class="milestone-item">
+                            <div class="milestone-year">1999</div>
+                            <div class="milestone-text">Co-founds Zip2 — sold to Compaq for $307M. First major wealth event.</div>
+                        </div>
+                        <div class="milestone-item">
+                            <div class="milestone-year">2002</div>
+                            <div class="milestone-text">PayPal acquired by eBay for $1.5B. Musk receives roughly $180M.</div>
+                        </div>
+                        <div class="milestone-item">
+                            <div class="milestone-year">2010</div>
+                            <div class="milestone-text">Tesla IPO. SpaceX wins its first NASA Commercial Resupply contract. Net worth: ~$1B.</div>
+                        </div>
+                        <div class="milestone-item">
+                            <div class="milestone-year">2020</div>
+                            <div class="milestone-text">Tesla stock surges over 700%. Net worth crosses $100B for the first time.</div>
+                        </div>
+                        <div class="milestone-item">
+                            <div class="milestone-year">2021</div>
+                            <div class="milestone-text">Becomes the world's richest person for the first time in January. Worth $200B+.</div>
+                        </div>
+                        <div class="milestone-item">
+                            <div class="milestone-year">Jun 2026</div>
+                            <div class="milestone-text">Forbes reports that Musk becomes the first person on Earth whose estimated net worth crosses $1 trillion, following SpaceX's public-market debut.</div>
+                        </div>
+                        <div class="milestone-item">
+                            <div class="milestone-year">Aug 2026</div>
+                            <div class="milestone-text">Forbes' real-time estimate stands at $869.8 billion on August 28, showing how quickly market-based wealth estimates can change.</div>
+                        </div>
                     </div>
                 </div>
             </div>
